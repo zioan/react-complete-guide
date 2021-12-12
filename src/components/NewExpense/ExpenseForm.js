@@ -8,6 +8,11 @@ const ExpenseForm = (props) => {
 
   const titleChangeHandler = (e) => {
     setEnteredTitle(e.target.value);
+
+    //used if the setState must relay on previous state value
+    // setUserInput((prevState) => {
+    //   return { ...prevState, enteredTitle: event.target.value };
+    // });
   };
 
   const amountChangeHandler = (e) => {
